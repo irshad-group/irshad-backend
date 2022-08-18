@@ -34,3 +34,4 @@ auth.json
 /.idea
 /.vscode
 
+composer.lock
