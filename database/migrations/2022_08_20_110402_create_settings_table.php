@@ -21,7 +21,7 @@ return new class extends Migration
             $table->mediumText('strval_kr');
             $table->integer('created_by_id');
             $table->string('title', 120);
-            $table->tinyInteger('notrans');
+            $table->tinyInteger('no_trans')->comment('No translation required like: phone and email'); // No translation required like: phone and email
             $table->timestamps();
             $table->softDeletes('deleted_at', 0); //DateTime with timezone
         });
