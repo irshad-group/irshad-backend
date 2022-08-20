@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('strkey', 32);
             $table->mediumText('strval_en');
             $table->mediumText('strval_ar');
-            $table->integer('created_by');
+            $table->integer('created_by_id');
             $table->string('title', 120);
             $table->tinyInteger('notrans');
             $table->timestamps();

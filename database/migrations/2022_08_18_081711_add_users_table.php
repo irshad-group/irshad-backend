@@ -27,7 +27,7 @@ return new class extends Migration
             $table->string('fb_token');
             $table->string('fb_id');
             $table->string('google_token');
-            $table->integer('added_by'); // User Id
+            $table->integer('created_by_id'); // User Id
             $table->softDeletes('deleted_at', 0); //DateTime with timezone
         });
     }
