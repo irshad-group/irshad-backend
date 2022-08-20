@@ -15,3 +15,12 @@
 - Run `php artisan migrate`
 - Run `php artisan serve`
 - Run `npm run dev`
+
+
+## Testing
+### Generating data
+- In your terminal run `php artisan tinker`
+- Enter Model name like `$data = new App\Models\[Ministries]`
+- Decide how many records you need for testing by `$data->factory()->count([10])->create()`
+
+
