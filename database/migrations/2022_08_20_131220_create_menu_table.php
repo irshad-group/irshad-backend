@@ -19,6 +19,7 @@ return new class extends Migration
             $table->tinyInteger('type')->comment('1:Main Item, 2: Sub item'); //1:Main Item, 2: Sub item
             $table->string('title_ar', 120);
             $table->string('title_en', 120);
+            $table->string('title_kr', 120);
             $table->string('icon');
             $table->integer('parent');
             $table->integer('v_order')->comment('vertical order'); // vertical order
