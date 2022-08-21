@@ -30,7 +30,7 @@ class MinistriesFactory extends Factory
             'gps_lat'  => $this->faker->latitude,
             'gps_lon'  => $this->faker->longitude,
             'website'  => $this->faker->url,
-            'created_by'  => $this->faker->boolean,
+            'created_by_id'  => $this->faker->boolean,
 
         ];
     }
