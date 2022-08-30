@@ -32,7 +32,7 @@ class DirectoratesFactory extends Factory
             'working_hours_en' => $this->faker->numberBetween(6, 24),
             'working_hours_kr' => $this->faker->numberBetween(6, 24),
             'website'      => $this->faker->url,
-            'created_by_id'=> $this->faker->boolean,
+            'created_by'   => $this->faker->boolean,
         ];
     }
 }
