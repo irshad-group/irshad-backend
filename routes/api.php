@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MinistriesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,14 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+// START API v1
+Route::prefix('/v1')->name('api.v1.')->group(function () {
+    // START Ministries Routers
+    Route::prefix('/ministries')->name('ministries.')->group(function () {
+        Route::get('/all', [MinistriesController::class, 'index'])->name('all');
+    });
+    // END Ministries Routers
+});
+// END API v1

@@ -4,17 +4,20 @@ namespace App\Http\Controllers;
 
 use App\Models\Ministries;
 use Illuminate\Http\Request;
+use App\Http\Resources\MinistriesResource;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 
 class MinistriesController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return AnonymousResourceCollection
      */
     public function index()
     {
-        //
+        // Get all data
+        return MinistriesResource::collection(Ministries::all());
     }
 
     /**
