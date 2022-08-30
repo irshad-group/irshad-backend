@@ -27,7 +27,7 @@ return new class extends Migration
             $table->string('working_hours_en', 300);
             $table->string('working_hours_kr', 300);
             $table->string('website');
-            $table->integer('created_by_id');
+            $table->integer('created_by');
             $table->timestamps();
             $table->softDeletes('deleted_at', 0); //DateTime with timezone
         });

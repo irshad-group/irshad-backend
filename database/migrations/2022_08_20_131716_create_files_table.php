@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('path', 400);
             $table->integer('dest_type')->comment('0: Proc, 2: Proc Items'); // 0: Proc, 2: Proc Items
             $table->integer('dest_id');
-            $table->integer('created_by_id');
+            $table->integer('created_by');
             $table->timestamps();
             $table->softDeletes('deleted_at', 0); //DateTime with timezone
         });

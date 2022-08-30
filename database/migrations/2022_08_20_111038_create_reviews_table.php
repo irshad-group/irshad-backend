@@ -20,7 +20,7 @@ return new class extends Migration
             $table->integer('dest_type')->comment('0: Proc, 1: Proc Item, 2: Directorate, 3: Ministry'); // 0: Proc, 1: Proc Item, 2: Directorate, 3: Ministry
             $table->integer('dest_id');
             $table->string('token', 256);
-            $table->string('created_by_id');
+            $table->string('created_by');
             $table->timestamps();
             $table->softDeletes('deleted_at', 0); //DateTime with timezone
         });

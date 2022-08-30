@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('gps_lat');
             $table->string('gps_lon');
             $table->string('address');
-            $table->integer('created_by_id');
+            $table->integer('created_by');
             $table->timestamps();
             $table->softDeletes('deleted_at', 0); //DateTime with timezone
         });

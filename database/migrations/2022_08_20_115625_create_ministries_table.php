@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('gps_lat', 256);
             $table->string('gps_lon', 256);
             $table->string('website', 200);
-            $table->integer('created_by_id');
+            $table->integer('created_by');
             $table->timestamps();
             $table->softDeletes('deleted_at', 0); //DateTime with timezone
         });

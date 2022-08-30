@@ -22,7 +22,7 @@ return new class extends Migration
             $table->text('descr_ar');
             $table->text('descr_kr');
             $table->integer('v_order')->comment('vertical order'); // vertical order
-            $table->integer('created_by_id');
+            $table->integer('created_by');
             $table->timestamps();
             $table->softDeletes('deleted_at', 0); //DateTime with timezone
         });
