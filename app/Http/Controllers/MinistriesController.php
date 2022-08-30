@@ -44,12 +44,13 @@ class MinistriesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Ministries  $ministries
-     * @return \Illuminate\Http\Response
+     * @param $id
+     * @return AnonymousResourceCollection
      */
-    public function show(Ministries $ministries)
+        public function show($id)
     {
-        //
+        // Fetch one record
+        return MinistriesResource::collection(Ministries::where(['id' => $id])->get());
     }
 
     /**
