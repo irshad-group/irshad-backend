@@ -26,8 +26,6 @@ class MinistriesResource extends JsonResource
             'gps_lon'    => $this->gps_lon,
             'website'    => $this->website,
             'created_by' => $this->created_by,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at,
         ];
     }
 }
