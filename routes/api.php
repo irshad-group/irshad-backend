@@ -26,6 +26,7 @@ Route::prefix('/v1')->name('api.v1.')->group(function () {
     Route::prefix('/ministries')->name('ministries.')->group(function () {
         Route::get('/all', [MinistriesController::class, 'index'])->name('all');
         Route::get('/{id}', [MinistriesController::class, 'show'])->name('show');
+        Route::post('/store', [MinistriesController::class, 'store'])->name('store');
     });
     // END Ministries Routers
 });
